@@ -1,50 +1,61 @@
-# 📡 Task 5: Capture and Analyze Network Traffic using Wireshark
-
-## 📝 Objective
-Capture live network packets, identify basic protocols, and export them for further analysis.
+# 🦈 Task 5: Capture and Analyze Network Traffic Using Wireshark  
+> 📡 Capturing live network packets, identifying protocols, and analyzing traffic patterns.
 
 ---
 
-## 🔧 Tools Used
-- **Wireshark** (Free & Open Source)
+## 🎯 Objective  
+Capture live network packets, identify common protocols, and export them for deeper analysis.
 
 ---
 
-## 🛠 Steps Performed
-1️⃣ Installed and launched **Wireshark**.  
-2️⃣ Selected the active network interface for packet capture.  
-3️⃣ Generated traffic by browsing websites (HTTP & HTTPS) and using `ping`.  
-4️⃣ Stopped capture after ~1 minute.  
-5️⃣ Applied filters to view specific protocols: `dns`, `tcp`, `http`.  
-6️⃣ Identified multiple protocols in the capture.  
-7️⃣ Exported capture as `.pcap` file.
+## 🛠 Tools Used  
+- 🦈 **Wireshark** (Free & Open Source)
 
 ---
 
-## 📊 Summary of Findings
-- **Protocols Observed:**  
-  - 🌐 **HTTP** – Cleartext web traffic (unencrypted).  
-  - 🔒 **HTTPS** – Encrypted web traffic.  
-  - 📦 **TCP** – Transmission Control Protocol (reliable data transfer).  
-  - ❓ **DNS** – Domain name lookups (hostname ↔ IP address).  
-
-- **Traffic Insights:**  
-  - Public IPs (e.g., `8.8.8.8`) belong to Google DNS.  
-  - Private IPs (`192.168.x.xxx`) masked for privacy.  
-  - DNS queries occur before HTTP/HTTPS connections.
+## 📋 Steps Performed  
+1️⃣ Installed and launched **Wireshark**  
+2️⃣ Selected Wi-Fi / active network interface  
+3️⃣ Generated traffic: 🌐 visited HTTP/HTTPS sites + 📡 ran `ping`  
+4️⃣ ⏹ Stopped recording after ~1 minute  
+5️⃣ 🔍 Applied filters: `dns`, `tcp`, `http`  
+6️⃣ 🧠 Identified observed protocols  
+7️⃣ 📤 Exported the `.pcap` file for analysis  
 
 ---
 
-## 📂 Files Included
-- `network_capture.pcap` – Full packet capture.  
-- `report.md` – Detailed analysis.
+## 📡 Protocols Observed  
+- 🌍 **HTTP** – Cleartext web traffic (unencrypted)  
+- 🔒 **HTTPS** – Encrypted communications via TLS  
+- 📦 **TCP** – Reliable, ordered data transfer  
+- ❓ **DNS** – Hostname resolutions (hostname ↔ IP)
 
 ---
 
-## 🔒 Privacy Note
-- All sensitive internal IP addresses have been masked.  
-- Public IPs retained for educational authenticity.
+## 🔍 Traffic Insights  
+- 📤 Outgoing DNS queries to public servers (e.g., `8.8.8.8`)  
+- 🏠 Local IPs masked (`192.168.x.xxx`) for safety  
+- 📑 DNS lookups precede HTTP/HTTPS connections
 
 ---
 
-✅ **Task Completed Successfully**
+## 📂 Files Included  
+- 📁 `network_capture.pcap` – Packet capture file  
+- 📝 `report.md` – Detailed protocol breakdown
+
+---
+
+## 🚀 How to Use  
+1️⃣ Clone or download the repo  
+2️⃣ 🦈 Open `.pcap` in Wireshark to explore captured packets  
+3️⃣ 📖 Read `report.md` for analysis and insights  
+
+---
+
+## 🔐 Privacy Note  
+All internal IP addresses have been safely masked. Public addresses retained for clarity.
+
+---
+
+✅ **Task completed successfully** 🎉
+
